@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Recently Played Songs at {{station}}</title>
+</head>
+<body>
+    <h1>Playlist for {{station}}</h1>
+    {% for played in playlist %}
+       {{played.track.title_display}} at {{played.time|date:"g:i"}}<br/>
+    {% endfor %}
+</body>
+</html>

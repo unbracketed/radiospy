@@ -1,0 +1,9 @@
+Django 1.0
+
+django-command-extensions r188
+
+Twisted 8.2
+
+
+python-musicbrainz 2.0.6.0:  http://ftp.musicbrainz.org/pub/musicbrainz/python-musicbrainz2/python-musicbrainz2-0.6.0.tar.gz
+    svn checkout http://svn.musicbrainz.org/python-musicbrainz2/trunk python-musicbrainz2

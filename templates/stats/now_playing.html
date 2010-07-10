@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Now Playing on Internet Radio Stations</title>
+</head>
+<body>
+    <h1>Now Playing on Internet Radio Stations</h1>
+    {% for playing in now_playing %}
+    {{playing.track.title_display}} at {{playing.time|date:"g:i"}} on <a href="{% url stats_station_playlist playing.channel.id %}">{{playing.channel}}</a><br/>
+    {% endfor %}
+</body>
+</html>
